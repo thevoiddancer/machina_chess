@@ -65,7 +65,7 @@ def legal_pijun(figura: dict[str, str], cilj: str) -> bool:
 
 # Ovdje ostale funkcije
 
-def legal_top (figura:dict[str,str],cilj : str) -> bool:
+def legal_kula (figura:dict[str,str],cilj : str) -> bool:
     """
     Funkcija koja provjerava dali je potez topa legalan, a pravila koja prati su:
         - Top se može pomicati bilo koji broj slobodnih polja vodoravno ili uspravno.
@@ -106,7 +106,7 @@ def legal_top (figura:dict[str,str],cilj : str) -> bool:
 LEGAL_FUNCITONS = {
     'pijun': legal_pijun,
     # 'konj': legal_konj,
-    # ...
+    "kula" : legal_kula
 }
 
 def is_move_legal(figura: dict[str, str], cilj) -> bool:
