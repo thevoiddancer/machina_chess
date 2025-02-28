@@ -57,3 +57,17 @@ class Igrač:
 
     def __repr__(self) -> str:
         return f'{self.ime} {self.boja[0].upper()}'
+    
+    def položaji(self, tip) -> list[str]:
+        položaji = []
+        for figura in self.figure:
+            if figura.tip == tip:
+                položaji.append(figura.položaj_str)
+        return položaji
+
+    def postoji_figura(self, tip, polazište) -> bool:
+        """
+        Funkcija koja provjerava ima li dani igrač figuricu tog tipa na tom mjestu. 
+        Može se koristiti metoda .položaji() s objekta Igrač.
+        """
+        pass
